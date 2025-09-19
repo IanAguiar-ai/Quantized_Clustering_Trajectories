@@ -4,7 +4,7 @@ This repository demo shows how to use **`cluster_routes`** (from `quantized_clus
 
 - **Notebook**: `demo_cluster_routes.ipynb`
 - **Core code**: `quantized_clustering_trajectories.py`
-- **Paper (PDF)**: `SIoT_Article_Similarity_Trajectories.pdf` <link>
+- **Paper (PDF)**: `SIoT_Article_Similarity_Trajectories.pdf (link here soon)` <link>
 
 ## What this demo does
 
