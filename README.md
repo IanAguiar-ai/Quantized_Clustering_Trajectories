@@ -58,6 +58,11 @@ print("Cluster sizes:", [len(v) for v in groups.values()])
 print("Representative medoids:", medoids)
 ```
 
+## Updates
+
+- **1.0.0**
+    - First version.
+
 ## Citation
 
 If you use or adapt this technique, please cite the paper and reference this repository. See the PDF for the formal description and references.
