@@ -8,7 +8,7 @@ This repository demo shows how to use **`cluster_routes`** (from `quantized_clus
 
 ## What this demo does
 
-1. **Build 4 base shapes** in lat/lon: (A) east–west line, (B) north–south line, (C) diagonal, (D) S-curve.
+1. **Build 4 base shapes** in lon/lat: creates 4 trajectories (**A**, **B**, **C**, **D**).
 2. **Sample noisy trajectories** per type with tiny jitter/offset and irregular sampling.
 3. **Cluster** all 80 routes with `cluster_routes` using:
    - `truncation_deg = 0.0001` (≈ 11 m near the equator)
@@ -16,7 +16,7 @@ This repository demo shows how to use **`cluster_routes`** (from `quantized_clus
    - `cut_distance = 0.04`
    - `method = "average"`
 
-Counts per type for this demo: **25 (A)**, **15 (B)**, **5 (C)**, **35 (D)**.
+Counts per type of trajectories for this demo: **25 (A)**, **15 (B)**, **5 (C)**, **35 (D)**.
 
 ## How the method works (high level)
 
@@ -39,7 +39,7 @@ import pandas as pd
 from quantized_clustering_trajectories import cluster_routes
 
 # Suppose you already built a list of DataFrames:
-# routes = [df0, df1, ..., dfN]  # each with 'latitude' and 'longitude'
+# routes = [df0, df1, ..., dfN]  # each with 'longitude' and 'latitude'
 
 groups, medoids = cluster_routes(
     routes=routes,
