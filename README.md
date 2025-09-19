@@ -46,10 +46,6 @@ groups, medoids = cluster_routes(
     truncation_deg=0.0001,
     lat_col="latitude",
     lon_col="longitude",
-    scale=1000.0,
-    combinations=None,     # compute all pairs
-    random_state=123,
-    progress=False,
     cut_distance=0.04,
     method="average",
 )
