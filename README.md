@@ -2,8 +2,8 @@
 
 This repository demo shows how to use **`cluster_routes`** (from `quantized_clustering_trajectories.py`) to group **80 synthetic trajectories** into route types.
 
-- **Notebook**: `demo_cluster_routes.ipynb`
-- **Core code**: `quantized_clustering_trajectories.py`
+- **Notebook**: [`demo_cluster_routes.ipynb`](https://github.com/IanAguiar-ai/Quantized_Clustering_Trajectories/blob/main/quantized_clustering_trajectories/demo_cluster_routes.ipynb)
+- **Core code**: [`quantized_clustering_trajectories.py`](https://github.com/IanAguiar-ai/Quantized_Clustering_Trajectories/blob/main/quantized_clustering_trajectories/quantized_clustering_trajectories.py)
 - **Paper (PDF)**: `SIoT_Article_Similarity_Trajectories.pdf (link here soon)` <link>
 
 ## What this demo does
@@ -51,6 +51,9 @@ groups, medoids = cluster_routes(
 )
 
 print("Cluster sizes:", [len(v) for v in groups.values()])
+for key in groups.keys():
+    print(f"Group ({key:02}) -> Routes: {', '.join(groups[key])}")
+
 print("Representative medoids:", medoids)
 ```
 
